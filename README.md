@@ -1,1 +1,0 @@
-# Mr-IoTian-Problem_Solving-stiver_CP_sheet
