@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    for (int i = 0; i < 5; i++) {
-        if (i == 3) {
-            break;
-        }
-        printf("%d\n", i);
+    __size_t t= 1;
+    if (t)
+    {
+        printf("%d", t);
     }
+    
 
     return 0;
 }
