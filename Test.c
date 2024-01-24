@@ -3,10 +3,9 @@
 int main()
 {
     char word[1000];
-    scanf("%5s", word);
-    if (word[0] >= 97)
+    for (int i = 0; i < 200; i++)
     {
-        word[0] = word[0] - 32;
+        printf("%d  %c\n", i);
     }
 
     printf("%s \n", word);
