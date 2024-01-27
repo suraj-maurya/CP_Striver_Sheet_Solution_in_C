@@ -8,7 +8,7 @@ int main()
     scanf("%d", &t);
     for (int i = 0; i < t; i++)
     {
-        int n = 0, num = 0, index=0;
+        int n = 0, num = 0, odd=0, even=0;
         scanf("%d", &n);
         int a[n];
         for (int j = 0; j < n; j++)
@@ -16,11 +16,17 @@ int main()
             scanf("%d", &a[j]);
             if (a[j]%2!=0)
             {
-                index=j;
-                
-            }
+            odd=j;
+            }else even=j;
             
-            num = num + a[j];
+            if (j==n-1)
+            {
+                if (num%2==0)
+                {
+                   num=num+a[odd]; 
+                }else num=num+a[even];
+            }else num = num + a[j];
+            
         }
         if (num % 2 != 0)
             printf("YES\n");
