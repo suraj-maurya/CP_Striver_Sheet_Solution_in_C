@@ -1,6 +1,5 @@
 // Welcome || 27-01-2024 || 17:09:37
 #include <stdio.h>
-#include <time.h>
 
 int main()
 {
@@ -43,7 +42,7 @@ int main()
         }
         if (n >= 3)
         {
-            left = (n -    ((max - max1) + (max - max2))) % 3;
+            left = (n - ((max - max1) + (max - max2))) % 3;
         }
         else
             left = 1;
